@@ -17,14 +17,11 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img :src="imagesList[activeImg].image" alt="Spiderman" />
+                    <img :src="objectsList[activeIndex].image" alt="Spiderman" />
                     <div class="text">
-                        <h3>Spiderman</h3>
+                        <h3>{{ objectsList[activeIndex].title }}</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
-                            tempore aliquid deleniti aut
-                            veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum
-                            corporis.
+                            {{ objectsList[activeIndex].text }}
                         </p>
                     </div>
                 </div>
