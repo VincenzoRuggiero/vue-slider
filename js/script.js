@@ -61,6 +61,22 @@ createApp({
       ],
     };
   },
+
+  methods: {
+    prevImg() {
+      this.activeImg--;
+      if (this.activeImg < 0) {
+        this.activeImg = this.imagesList.length - 1;
+      }
+    },
+
+    nextImg() {
+      this.activeImg++;
+      if (this.activeImg >= this.imagesList.length) {
+        this.activeImg = 0;
+      }
+    },
+  },
 }).mount("#app");
 
 console.log(slides);
